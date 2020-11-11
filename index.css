@@ -10,10 +10,63 @@ main {
   overflow-y: scroll;
 }
 
-.hero {
+main > * {
+  margin-bottom: 5%;
+}
+
+#hero {
   background-image: url(./images/menstrual-hero_mobile.jpg);
   background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
+}
+
+#hero > div {
+  height: 90%;
+  /* margin: 10%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-display {
+  padding: 10%;
+}
+
+.text-display > * {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#features {
+  /* height: 300vw; */
+}
+
+.mobile-detail-img {
+  margin: 5vw;
+  height: 90vw;
+  background-size: cover;
+}
+
+#bamboo {
+  background-image: url(./images/bamboo_mobile.jpg);
+  color: #ffffff;
+}
+
+#pad-detail {
+  background-image: url(./images/pad_detail_mobile.jpg);
+}
+
+#pad-in-hand {
+  background-image: url(./images/pad_in_hand_mobile.jpg);
+  height: 100vw !important;
+}
+
+@media (min-width: 999px) {
+  #hero {
+    background-image: url(./images/menstrual-hero_desktop.jpg);
+    background-size: cover;
+  }
 }
