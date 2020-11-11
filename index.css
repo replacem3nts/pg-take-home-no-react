@@ -14,6 +14,8 @@ main > * {
   margin-bottom: 5%;
 }
 
+/* HERO BELOW */
+
 #hero {
   background-image: url(./images/menstrual-hero_mobile.jpg);
   background-size: cover;
@@ -24,7 +26,6 @@ main > * {
 
 #hero > div {
   height: 90%;
-  /* margin: 10%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,11 +41,13 @@ main > * {
   margin-bottom: 20px;
 }
 
-#features {
-  /* height: 300vw; */
+.desk-vis {
+  display: none;
 }
 
-.mobile-detail-img {
+/* FEATURES BELOW */
+
+.detail-img {
   margin: 5vw;
   height: 90vw;
   background-size: cover;
@@ -61,12 +64,135 @@ main > * {
 
 #pad-in-hand {
   background-image: url(./images/pad_in_hand_mobile.jpg);
-  height: 100vw !important;
 }
 
+/* PRODUCTS BELOW */
+
+.indv-product :nth-child(3) {
+  font-weight: 700;
+}
+
+.indv-product > p {
+  margin-left: 5%;
+}
+
+#regular-pad {
+  background-image: url(./images/product_images/bamboo-regular-maxi-pad.jpg);
+}
+
+#super-pad {
+  background-image: url(./images/product_images/bamboo-super-maxi-pad.jpg);
+}
+
+#overnight-pad {
+  background-image: url(./images/product_images/bamboo-overnight-pads.jpg);
+}
+
+#panty-liner {
+  background-image: url(./images/product_images/bamboo-panty-liners.jpg);
+}
+
+/* NEW TO PG BELOW */
+
+#new-to-pg {
+  background-image: url(./images/new-to-public-goods_mobile.jpg);
+  background-size: cover;
+  height: 75vh;
+}
+
+/* DESKTOP BELOW */
+
 @media (min-width: 999px) {
+  /* HERO BELOW */
+
   #hero {
     background-image: url(./images/menstrual-hero_desktop.jpg);
     background-size: cover;
+    height: 50vh;
+    flex-direction: row;
+  }
+
+  #hero > div {
+    width: 35vw;
+  }
+
+  .text-display > * {
+    text-align: left;
+  }
+
+  .mobile-vis {
+    display: none;
+  }
+
+  .desk-vis {
+    display: block;
+  }
+
+  /* FEATURES BELOW */
+
+  #features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .detail-img {
+    margin: 10px;
+    height: 50vh;
+  }
+
+  #bamboo {
+    background-image: url(./images/bamboo_desktop.jpg);
+    width: 93vw;
+  }
+
+  #pad-detail {
+    background-image: url(./images/pad_detail_desktop.jpg);
+    width: 44vw;
+  }
+
+  #pad-in-hand {
+    background-image: url(./images/pad_in_hand_desktop.jpg);
+    width: 45vw;
+  }
+
+  /* PRODUCTS BELOW */
+
+  #products {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .prod-img {
+    margin: 5px;
+    width: 22vw;
+    height: 30vh;
+  }
+
+  #new-to-pg {
+    background-image: url(./images/new-to-public-goods_desktop.jpg);
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3vw;
+    padding-right: 60vw;
+  }
+
+  #new-to-pg > .text-display {
+    padding: 5px;
+    text-align: left;
+  }
+
+  #new-to-pg-quotes {
+    background-image: url(./images/press-quotes.png);
+    background-size: cover;
+    width: 28vw;
+    height: 8vh;
   }
 }
